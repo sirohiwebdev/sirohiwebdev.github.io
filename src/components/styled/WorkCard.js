@@ -6,10 +6,10 @@ export const WorkCard = Styled.div`
     width: 100%
 }
 
-width: 500px;
+width: 450px;
 border-radius: 4px;
 border: 4px solid #FFF;
-height: 400px;
+height: 360px;
 margin-bottom: 4rem;
 background-color: #FFF;
 background-image: url(${props => props.source});

@@ -15,7 +15,8 @@ export const Home = () => {
       opacity: 0
     },
     config: {
-      duration: 1200
+      duration: 1200,
+      delay: 300
     }
   });
   const avtarSpring = useSpring({
