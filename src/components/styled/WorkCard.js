@@ -9,11 +9,12 @@ export const WorkCard = Styled.div`
 width: 450px;
 border-radius: 4px;
 border: 4px solid #FFF;
-height: 360px;
+height: 300px;
 margin-bottom: 4rem;
 background-color: #FFF;
 background-image: url(${props => props.source});
-background-size: cover;
+background-size: 100% auto;
+background-repeat: no-repeat;
 background-position: center;
 position: relative;
 box-shadow: 0px 0px 30px -10px rgba(0,23,30,0.6);
@@ -27,9 +28,10 @@ overflow: hidden;
     height: 100%;
     position: absolute;
     bottom: -100%;
+    opacity: 0.2;
     left: 0;
     background-color: #2e86c1DD;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 :hover{
@@ -38,6 +40,7 @@ overflow: hidden;
 
 :hover > .card-overlay{
     bottom:0;
+    opacity:0.9
 }
 
 `;

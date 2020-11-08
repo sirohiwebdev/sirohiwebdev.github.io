@@ -3,7 +3,7 @@ import { Row, Col, Button } from "react-bootstrap";
 import { WorkCard } from "./styled/WorkCard";
 import safepe from "../assets/images/safepe.png";
 import icdsa from "../assets/images/icdsa.png";
-import { Slide, Fade } from "react-reveal";
+import {Fade } from "react-reveal";
 
 export const Work = () => {
   return (
@@ -13,13 +13,13 @@ export const Work = () => {
       </Col>
 
       <Col md={10} className="mx-auto">
-        <div className="d-flex justify-content-around align-items-center flex-wrap">
+        <div className="d-md-flex justify-content-around align-items-center flex-wrap">
           <Fade bottom>
             <WorkCard source={safepe}>
               <div className="card-overlay">
                 <div className="d-flex flex-column justify-content-center align-items-center text-white h-100">
                   <h4>SafePe Payment Website</h4>
-                  <a href="http://safepeindia.com" target="_blank" rel="no">
+                  <a href="http://safepeindia.com" target="_blank" rel="noopener noreferrer">
                     <Button variant={"outline-light"}>Visit</Button>
                   </a>
                 </div>
@@ -31,27 +31,6 @@ export const Work = () => {
                 <div className="d-flex flex-column justify-content-center align-items-center text-white h-100">
                   <h4>ICDSA Website</h4>
                   <a href="http://icdsa.reck.ac.in/" target="_blank" rel="no">
-                    <Button variant={"outline-light"}>Visit</Button>
-                  </a>
-                </div>
-              </div>
-            </WorkCard>
-
-            <WorkCard source={safepe}>
-              <div className="card-overlay">
-                <div className="d-flex flex-column justify-content-center align-items-center text-white h-100">
-                  <h4>SafePe Payment Website</h4>
-                  <a href="http://safepeindia.com" target="_blank" rel="no">
-                    <Button variant={"outline-light"}>Visit</Button>
-                  </a>
-                </div>
-              </div>
-            </WorkCard>
-            <WorkCard source={safepe}>
-              <div className="card-overlay">
-                <div className="d-flex flex-column justify-content-center align-items-center text-white h-100">
-                  <h4>SafePe Payment Website</h4>
-                  <a href="http://safepeindia.com" target="_blank" rel="no">
                     <Button variant={"outline-light"}>Visit</Button>
                   </a>
                 </div>

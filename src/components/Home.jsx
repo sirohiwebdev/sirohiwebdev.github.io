@@ -7,6 +7,7 @@ import { Skills } from "./Skills";
 import { Education } from "./Education";
 import { Work } from "./Work";
 import { Fade } from "react-reveal";
+import {Footer} from "./Footer";
 
 export const Home = () => {
   const opacitySpring = useSpring({
@@ -44,7 +45,7 @@ export const Home = () => {
             <h1 className="font-weight-bold">
               <small>I am</small> Abhishek Sirohi
             </h1>
-            <h4 className={"text-pre"}>Full-stack Developer | Designer</h4>
+            <h4 className={"text-pre"}>Full-stack Developer | Freelancer | Designer</h4>
           </animated.div>
         </Col>
       </Row>
@@ -70,6 +71,7 @@ export const Home = () => {
       <Skills />
       <Education />
       <Work />
+      <Footer/>
     </Container>
   );
 };
