@@ -11,8 +11,8 @@ phases:
   post_build:
     commands:
       # copy the contents of /build to S3
-      - aws s3 cp --recursive ./build s3://sirohiwebdev-demo/
-      - aws s3 cp --cache-control max-age=0 ./build/index.html s3://sirohiwebdev-demo/index.html
+      - aws s3 cp --recursive ./build s3://sirohiwebdev.com/
+      - aws s3 cp --cache-control max-age=0 ./build/index.html s3://sirohiwebdev.com/index.html
 
 artifacts:
   files:
